@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /temp/
+Disallow: /draft/
+Disallow: /test/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+Host: https://danil-2006.github.io/danilka.github.io/
