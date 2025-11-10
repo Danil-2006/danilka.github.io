@@ -1,32 +1,143 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Техніка для дому</title>
-<style>
-body{font-family:Arial,sans-serif;margin:0;background:#f4f4f4;color:#333;text-align:center}
-header{background:#0078D7;color:#fff;padding:20px 0}
-section{padding:30px 15px}
-h1{margin:0}
-.products{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
-.item{background:#fff;padding:15px;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.1);width:250px}
-.item img{width:100%;border-radius:8px}
-button{background:#0078D7;color:#fff;border:none;padding:10px 20px;border-radius:5px;cursor:pointer}
-button:hover{background:#005fa3}
-footer{background:#222;color:#fff;padding:10px;font-size:14px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Інтернет-магазин техніки для дому">
+  <meta name="keywords" content="побутова техніка, холодильник, пральна машина, пилосос">
+  <meta name="author" content="Техніка для дому">
+  <title>Техніка для дому</title>
+
+  <style>
+    body {font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; text-align: center;}
+    header {background: #0078D7; color: #fff; padding: 20px 0;}
+    section {padding: 30px 15px;}
+    h1 {margin: 0;}
+    .products {display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;}
+    .item {background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 250px;}
+    .item img {width: 100%; border-radius: 8px;}
+    button {background: #0078D7; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;}
+    button:hover {background: #005fa3;}
+    footer {background: #222; color: #fff; padding: 10px; font-size: 14px;}
+    nav a {color: #fff; margin: 0 10px; text-decoration: none;}
+  </style>
 </head>
 <body>
-<header><h1>Техніка для дому</h1><p>Надійна якість за найкращою ціною</p></header>
-<section>
-<h2>Наші товари</h2>
-<div class="products">
-<div class="item"><img src="https://via.placeholder.com/250x150" alt="Пральна машина"><h3>Пральна машина</h3><p>Економна та потужна.</p><button>Купити</button></div>
-<div class="item"><img src="https://via.placeholder.com/250x150" alt="Холодильник"><h3>Холодильник</h3><p>Зберігає свіжість надовго.</p><button>Купити</button></div>
-<div class="item"><img src="https://via.placeholder.com/250x150" alt="Пилосос"><h3>Пилосос</h3><p>Чистота без зусиль.</p><button>Купити</button></div>
-</div>
-</section>
-<footer>&copy; 2025 Техніка для дому. Всі права захищено.</footer>
+
+  <header>
+    <h1>Техніка для дому</h1>
+    <p><em>Надійна якість за найкращою ціною</em></p>
+    <nav>
+      <a href="#products">Товари</a>
+      <a href="#about">Про нас</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="products">
+      <h2>Наші товари</h2>
+
+      <article class="products">
+        <div class="item">
+          <img src="https://via.placeholder.com/250x150" alt="Пральна машина">
+          <h3>Пральна машина</h3>
+          <p>Економна та потужна.</p>
+          <button>Купити</button>
+        </div>
+
+        <div class="item">
+          <img src="https://via.placeholder.com/250x150" alt="Холодильник">
+          <h3>Холодильник</h3>
+          <p>Зберігає свіжість надовго.</p>
+          <button>Купити</button>
+        </div>
+
+        <div class="item">
+          <img src="https://via.placeholder.com/250x150" alt="Пилосос">
+          <h3>Пилосос</h3>
+          <p>Чистота без зусиль.</p>
+          <button>Купити</button>
+        </div>
+      </article>
+    </section>
+
+    <section id="about">
+      <h2>Про компанію</h2>
+      <p><strong>“Техніка для дому”</strong> — це надійний магазин побутової техніки, який працює з <time datetime="2010-01-01">2010 року</time>.</p>
+      <blockquote>“Якість — наш головний пріоритет.”</blockquote>
+    </section>
+
+    <section id="list-example">
+      <h2>Приклади списків</h2>
+      <h3>Маркірований список</h3>
+      <ul>
+        <li>Пральні машини</li>
+        <li>Холодильники</li>
+        <li>Пилососи</li>
+      </ul>
+
+      <h3>Нумерований список</h3>
+      <ol>
+        <li>Замовлення товару</li>
+        <li>Оплата</li>
+        <li>Доставка</li>
+      </ol>
+
+      <h3>Описовий список</h3>
+      <dl>
+        <dt>Доставка</dt>
+        <dd>Безкоштовна при замовленні від 2000 грн.</dd>
+        <dt>Гарантія</dt>
+        <dd>12 місяців на всі товари.</dd>
+      </dl>
+    </section>
+
+    <section id="table">
+      <h2>Таблиця цін</h2>
+      <table border="1" align="center" cellpadding="5">
+        <caption>Ціни на популярні товари</caption>
+        <thead>
+          <tr><th>Товар</th><th>Ціна</th><th>Наявність</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Пральна машина</td><td>12 000 грн</td><td>В наявності</td></tr>
+          <tr><td>Холодильник</td><td>15 500 грн</td><td>Під замовлення</td></tr>
+          <tr><td>Пилосос</td><td>4 800 грн</td><td>В наявності</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contacts">
+      <h2>Зворотній зв’язок</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Напишіть нам</legend>
+          <label for="name">Ім’я:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="message">Повідомлення:</label><br>
+          <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+          <input type="submit" value="Надіслати">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <aside>
+    <h3>Акції</h3>
+    <p><mark>Знижка 20%</mark> на всі пилососи до кінця тижня!</p>
+  </aside>
+
+  <footer>
+    <address>м. Київ, вул. Технічна, 5<br>Телефон: <a href="tel:+380441234567">+38 (044) 123-45-67</a></address>
+    <small>&copy; 2025 Техніка для дому. Всі права захищено.</small>
+  </footer>
+
 </body>
 </html>
+
